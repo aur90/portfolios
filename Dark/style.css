@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.menu ul li ul li{
+    display: none;
+    float: none;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+ul li:hover ul li {
+     display: block;
+     transition: 1s all;
+     animation: drop 1s ease;
+}
+
+.menu ul li ul{
+    display: block;
+       margin-right: 90%;
+       padding-top: 5%;
+       
+}
+
+
+section{
+    padding: 100px;
+}
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/background.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2{
+    font-size: 2.3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span{
+    font-size: 1.1em;
+    font-weight: 300;
+    font-style: oblique;
+    color: #ff0157;
+}
+.banner h3{
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+}
+.btn{
+    font-size: 1em;
+    color: white;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header .sticky{
+    background: #fff;
+    padding: 40px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo{
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-style: oblique;
+}
+header .sticky .logo{
+    color: black;
+}
+header .logo span{
+    color: #ff0157;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: #ff0157;
+}
+header .sticky ul li a{
+    color: black;
+}
+/* about */
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+.about{
+    background-color: black;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contentBx{
+    padding-right: 40px;
+}
+.contentBx h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.content p{
+    font-size: 1.2rem;
+    color: white;
+    padding-top: 20px;
+}
+.w50{
+    min-width: 50%;
+}
+img{
+    max-width: 100%;
+}
+/* end about */
+
+/* service */
+
+.Services{
+    background: #111;
+}
+.heading .white{
+    color: #fff;
+}
+.Services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.Services .content .ServiceBx{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 250px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.Services .content .ServiceBx:hover{
+    background: crimson;
+}
+
+.Services .content .ServiceBx img{
+    max-width: 80px;
+    filter: invert(1);
+}
+.Services .content .ServiceBx h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* end service */
+
+/* project */
+.project{
+    background-color: #111;
+}
+ .project .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ 
+ .project .content .projectBx{
+    width: 50%;
+    padding: 20px;
+ }
+ .project .content .projectBx img{
+    max-width: 100%;
+ }
+/* end project */
+
+
+/* income */
+.income-header{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+ .income{
+    background: #111;
+} 
+/* .calculator{
+    background: #111;
+    box-sizing: border-box;
+    margin-left: 70px;
+} */
+.detailcontent{
+    width: 400px;
+    height: auto;
+    margin: auto;
+    background: black;
+    padding: 15px;
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+input[type=button]{
+    width: 89px;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#del{
+    width: 100%;
+}
+.income-header{
+    max-width: 500px;
+    margin: 0 auto;
+}
+/* end of income */
+
+
+/* contact */
+
+.contact{
+    background: #111;
+}
+.formBx{
+    min-width: 60%;
+}
+.formBx form{
+    display: flex;
+    flex-direction: column;
+}
+.formBx form h3,
+.contactInfo h3
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea
+{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+.formBx form textarea{
+    min-height: 200px;
+}
+.formBx form input,::placeholder
+.formBx form textarea::placeholder{
+    color: #999;
+}
+.formBx form input[type="submit"]{
+    max-width: 100px;
+    background: crimson;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.formBx form input[type="submit"]:hover{
+    letter-spacing: 6px;
+}
+.contactInfo{
+    min-width: 40%;
+}
+.contactInfoBx{
+    position: relative;
+}
+.contactInfoBx .box{
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+}
+/* .contactInfoBx .box .icons{
+    min-width: 40%;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+
+} */
+
+.contactInfoBx .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    flex-direction: column;
+}
+.contactInfoBx .box .text h3{
+    font-weight: 500;
+    color: crimson;
+    margin-bottom: 0;
+}
+
+
+/* end contact */
+
+/* footer */
+.footers{
+    background: black;
+    margin-top: -10px;
+}
+.footer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.footer-content{
+   background: black;
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+}
+.footer h1{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    margin-left: 550px;
+}
+.footer h2{
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: .0.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    margin-left: 480px;
+}
+.footer-icons{
+    display: flex;
+    margin-left: 500px;
+    padding: 10px;
+    
+}
+.footer-item{
+    height: 50px;
+    width: 50px;
+}
+
+.footer p{
+   color: white; 
+   font-size: 1.3rem;
+   margin-left: 450px;
+}
+/*
+/*end of footer */
+
+/* responsive */
+@media (max-width: 991px) {
+   header,
+   header .sticky
+   {
+    padding: 20px 50px;
+    z-index: 1000;
+   } 
+
+   .menu{
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    border: 1px solid rgba(0,0,0,0.2);
+   }
+   .menu .active{
+    left: 0;
+   }
+   header ul li a{
+    color: #111;
+    font-size: 24px;
+    margin: 10px;
+
+   }
+   .toggle{
+    width: 40px;
+    height: 40px;
+    background: url(img/icons8-menu-24.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+   }
+   .toggle .active{
+    background: url(img/icons8-close-24.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+   }
+   header .sticky .toggle{
+    filter: invert(1);
+   }
+   section{
+    padding: 100px 50px;
+ }
+.banner{
+    padding: 150px 50px 100px;
+}
+.banner h2{
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+.banner h3{
+    font-size: 1.8em;
+}
+.btn{
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.heading h2{
+    font-size: 22px;
+}
+.contentBx h3{
+    font-size: 20px;
+}
+.content{
+    flex-direction: column;
+}
+.w50{
+    margin-bottom: 20px;
+}
+.Services .content .ServiceBx{
+    margin: 10px;
+}
+.project .content .projectBx{
+    width: 100%;
+    padding: 10px;
+}
+.contactInfo{
+    margin: 20px 0;
+}
+.footer h1{
+    margin-left: 130px;
+}
+.footer h2{
+    margin-left: 130px;
+}
+.footer-icons{
+    margin-left: 130px;
+}
+.footer p{
+    margin-left: 130px;
+}
+}
+
+@media (max-width: 991px) 
+{
+    header,
+    header .sticky
+    {
+     padding: 20px 20px;
+    } 
+    .banner{
+        padding: 150px 20px 100px;
+    }
+    section{
+        padding: 100px 20px;
+    }
+}

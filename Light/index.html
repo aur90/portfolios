@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+    <script type="text/javascript" defer>
+        function confirm(){
+            var x = document.getElementById("Full_name").value;
+            var y = document.getElementById("email").value;
+            var z = document.getElementById("message").value;
+           
+            if(x==""){
+                alert("please enter Full name");
+            }
+            if(y==""){
+                alert("please enter email");
+            }
+            if(z==""){
+                alert("please enter message");
+            }
+        }
+    </script>
+
+    <header>
+        <a href="#" class="logo"><span>A</span>ya</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <div class="menu">
+        <ul>
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#Service" onclick="toggleMenu();">Service</a></li>
+            <li><a href="#project" onclick="toggleMenu();">Project</a></li>
+            <li><a href="" onclick="toggleMenu();">Income</a>
+                    <ul>
+                        <li class="list"><a href="index2.html">family</a></li><br>
+                        <li class="list"><a href="index2.html">friend</a></li>
+                     </ul>
+                    </li>
+            </li>
+            
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        
+        </ul>
+        </div>
+    </header>
+
+    <section class="banner" id="banner">
+        <div class="textBx">
+           <h2>Hello I'm <span>A</span>ya</h2> 
+           <h3>I'm a Front End Web Developer</h3>
+           <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+
+   
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Hi,this is Aya</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium neque iusto inventore
+                    impedit ab, recusandae assumenda, adipisci est maxime qui quia tempora sunt id consectetur
+                     ipsum dolor dignissimos aut in.
+                    </p>
+           </div>
+           <div class="w50">
+            <img src="img/imageA3.jpg" class="img">
+           </div>
+        </div>
+    </section>
+
+
+
+    <section class="Services" id="Service">
+        <div class="heading white">
+            <h2>Service</h2>
+            <br><br>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+        </div>
+        <div class="content">
+            <div class="ServiceBx">
+                <img src="img/DMI2.png" alt="adv"><br><br>
+                <h2>Application Develipment</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi,
+                     numquam doloribus sit, quia veniam corporis.</p>
+            </div>
+
+            <div class="ServiceBx">
+                <img src="img/DMI3.png" alt="adv"><br><br>
+                <h2>Web-Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi,
+                     numquam doloribus sit, quia veniam corporis.</p>
+            </div>
+
+            <div class="ServiceBx">
+                <img src="img/videoplay bw.png" alt="adv"><br><br>
+                <h2>Animation</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi,
+                     numquam doloribus sit, quia veniam corporis.</p>
+            </div>
+
+            <div class="ServiceBx">
+                <img src="img/coding.png" alt="adv"><br><br>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi,
+                     numquam doloribus sit, quia veniam corporis.</p>
+            </div>
+
+            <div class="ServiceBx">
+                <img src="img/graphic-design.png" alt="adv"><br><br>
+                <h2>Graphics</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi,
+                     numquam doloribus sit, quia veniam corporis.</p>
+            </div>
+
+
+            <div class="ServiceBx">
+                <img src="img/user-experience.png" alt="adv"><br><br>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi,
+                     numquam doloribus sit, quia veniam corporis.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="project" id="project">
+        <div class="heading">
+            <h2>Project</h2><br><br>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+        </div>
+        <div class="content">
+            <div class="projectBx" >
+                <img src="img/purple.jpg" alt="plg">
+            </div>
+
+            <div class="projectBx" >
+                <img src="img/social.jpg" alt="sig">
+            </div>
+
+            <div class="projectBx" >
+                <img src="img/blue.jpg" alt="blg">
+            </div>
+
+            <div class="projectBx" >
+                <img src="img/pink.jpg" alt="pig">
+            </div>
+
+        </div>
+
+        <div class="heading">
+            <a href="#" class="btn">View More</a>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact</h2>
+            <br><br>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>contact Info</h3>
+            <div class="contactInfoBx">
+                <div class="box">
+                <div class="icons"></div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>Simfany</p>
+                </div>
+                </div>
+
+                <div class="box">
+                    <div class="icons"></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+9997342657</p>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons"></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>aya123@gmail.com</p>
+                        </div>
+                        </div>
+
+            </div>
+        </div>
+        <div class="formBx">
+            <form onsubmit="confirm()">
+                <h3>Message </h3>
+                <input type="text" id="Full_name" name="" placeholder="Full Name">
+                <input type="email" id="email" name="" placeholder="Email">
+                <textarea placeholder="Your Message" id="message"></textarea>
+                <input type="submit" value="send">
+            </form>
+        </div>
+    </div>
+    </section>
+   
+    <section class="footers" id="footers">
+        <div class="footer-content">
+            <div class="footer">
+                <h1>Aya</h1>
+                <h2> If you want original things contact me</h2>
+               
+                <div class="footer-icons">
+                  <div class="footer-item">
+                      <a href="#"><img src="img/facebook black.webp"/></a>
+                  </div>
+                  <div class="footer-item">
+                      <a href="#"><img src="img/instagram black.webp"/></a>
+                  </div>
+                  <div class="footer-item">
+                      <a href="#"><img src="img/twitter black.webp"/></a>
+                  </div>
+                  <div class="footer-item">
+                      <a href="#"><img src="img/linkedin black.webp"/></a>
+                  </div>
+              </div> 
+              <br><br>      
+          <p>&copy; Copyright 2022. All rights Reserved. AYA.</p>
+        </div>
+      </div>
+       </section>
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function (){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menuToggle = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+
+</body>
+</html>
